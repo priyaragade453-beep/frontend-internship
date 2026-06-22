@@ -24,3 +24,20 @@
 - Node.js Setup
 - VS Code Setup
 
+Week 1 - Day 2
+
+Tasks Completed
+
+- Created resume.html
+- Created blog.html
+- Created contact.html
+- Used HTML5 Semantic Elements
+- Created Contact Form
+
+What I Learned
+
+- HTML5 Semantic Tags
+- Forms
+- Lists
+- Basic Web Page Structure
+- GitHub Workflow
