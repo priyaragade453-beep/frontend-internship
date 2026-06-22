@@ -24,17 +24,21 @@
 - Node.js Setup
 - VS Code Setup
 
-Week 1 - Day 2
+ ## Week 1 - Day 2
 
-Tasks Completed
+ ## Tasks Completed
 
-- Created resume.html
-- Created blog.html
-- Created contact.html
+- Created Professional Resume Page
+- Created Professional Blog Page
+- Created Professional Contact Page
+- Added Profile Photo
+- Added LinkedIn Profile Link
+- Improved UI using CSS
+- Practiced HTML and CSS fundamentals
 - Used HTML5 Semantic Elements
 - Created Contact Form
 
-What I Learned
+ ## What I Learned
 
 - HTML5 Semantic Tags
 - Forms
