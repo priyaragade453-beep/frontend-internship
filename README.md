@@ -45,3 +45,20 @@
 - Lists
 - Basic Web Page Structure
 - GitHub Workflow
+## Week 1 - Day 3
+
+### Tasks Completed
+
+- Learned CSS Selectors
+- Learned Typography
+- Learned Colors
+- Learned Box Model
+- Built Professional Portfolio Homepage
+- Added Skills Section
+- Added Services Section
+- Added Achievements Section
+- Added Hover Effects and Animations
+
+### Files
+
+- portfolio.html

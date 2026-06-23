@@ -1,0 +1,347 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Priya Ragade | Portfolio</title>
+
+<style>
+
+*{
+margin:0;
+padding:0;
+box-sizing:border-box;
+font-family:'Segoe UI',sans-serif;
+scroll-behavior:smooth;
+}
+
+body{
+background:radial-gradient(circle at top right,#1a1a00,#000);
+background-size:400% 400%;
+animation:gradientMove 15s ease infinite;
+color:white;
+overflow-x:hidden;
+}
+
+@keyframes gradientMove{
+0%{background-position:0% 50%;}
+50%{background-position:100% 50%;}
+100%{background-position:0% 50%;}
+}
+
+header{
+background:rgba(199, 213, 7, 0.7);
+backdrop-filter:blur(10px);
+padding:20px 8%;
+display:flex;
+justify-content:space-between;
+align-items:center;
+position:sticky;
+top:0;
+z-index:100;
+}
+
+.logo{
+font-size:28px;
+font-weight:bold;
+color:#FFD700;
+}
+
+nav a{
+color:white;
+text-decoration:none;
+margin-left:20px;
+font-weight:500;
+transition:0.3s;
+}
+
+nav a:hover{
+color:#FFD700;
+}
+
+.hero{
+min-height:90vh;
+display:flex;
+align-items:center;
+justify-content:center;
+gap:50px;
+padding:50px 8%;
+}
+
+.hero img{
+width:260px;
+height:260px;
+border-radius:50%;
+object-fit:cover;
+border:5px solid #FFD700;
+box-shadow:0 0 30px rgba(255,215,0,0.5);
+transition:0.5s;
+}
+
+.hero img:hover{
+transform:scale(1.08) rotate(5deg);
+}
+
+.hero-text h1{
+font-size:55px;
+color:#FFD700;
+}
+
+.hero-text h3{
+margin:10px 0;
+font-size:25px;
+}
+
+.hero-text p{
+max-width:600px;
+line-height:1.8;
+}
+
+.btn{
+display:inline-block;
+margin-top:20px;
+padding:12px 25px;
+background:#FFD700;
+color:black;
+font-weight:bold;
+text-decoration:none;
+border-radius:30px;
+transition:0.4s;
+}
+
+.btn:hover{
+transform:translateY(-5px);
+box-shadow:0 0 20px #FFD700;
+}
+
+section{
+padding:70px 8%;
+}
+
+.section-title{
+text-align:center;
+font-size:40px;
+margin-bottom:40px;
+color:#FFD700;
+}
+
+.about-box{
+background:rgba(255,255,255,0.05);
+backdrop-filter:blur(10px);
+padding:30px;
+border-radius:20px;
+border:1px solid rgba(255,255,255,0.1);
+}
+
+.skills{
+display:flex;
+flex-wrap:wrap;
+justify-content:center;
+gap:15px;
+}
+
+.skill{
+background:#FFD700;
+color:black;
+padding:10px 18px;
+border-radius:30px;
+font-weight:bold;
+transition:0.4s;
+}
+
+.skill:hover{
+transform:translateY(-5px) scale(1.1);
+}
+
+.cards{
+display:grid;
+grid-template-columns:repeat(auto-fit,minmax(220px,1fr));
+gap:25px;
+perspective:1000px;
+}
+
+.card{
+background:rgba(255,255,255,0.05);
+backdrop-filter:blur(10px);
+border:1px solid rgba(255,255,255,0.1);
+padding:25px;
+border-radius:20px;
+text-align:center;
+transition:0.5s cubic-bezier(0.175,0.885,0.32,1.275);
+}
+
+.card:hover{
+transform:translateY(-20px) rotateX(10deg) scale(1.05);
+box-shadow:0 20px 40px rgba(255,215,0,0.4);
+}
+
+.card h3{
+color:#FFD700;
+margin-bottom:15px;
+}
+
+.achievement{
+background:rgba(255,255,255,0.05);
+backdrop-filter:blur(10px);
+padding:20px;
+border-left:5px solid #FFD700;
+margin-bottom:15px;
+border-radius:15px;
+transition:0.4s;
+}
+
+.achievement:hover{
+transform:translateX(10px);
+}
+
+footer{
+text-align:center;
+padding:30px;
+background:black;
+}
+
+@media(max-width:768px){
+
+.hero{
+flex-direction:column;
+text-align:center;
+}
+
+.hero-text h1{
+font-size:40px;
+}
+
+.hero img{
+width:200px;
+height:200px;
+}
+
+}
+
+</style>
+</head>
+
+<body>
+
+<header>
+<div class="logo">Priya Portfolio</div>
+
+<nav>
+<a href="#about">About</a>
+<a href="#skills">Skills</a>
+<a href="#services">Services</a>
+<a href="#achievements">Achievements</a>
+</nav>
+</header>
+
+<section class="hero">
+
+<img src="image.png" alt="Priya Ragade">
+
+<div class="hero-text">
+
+<h1>Priya Ragade</h1>
+
+<h3>Aspiring Frontend Developer</h3>
+
+<p>
+B.Tech CSE (Data Science) Student from Nagpur.
+Passionate about creating modern, responsive and
+user-friendly websites.
+</p>
+
+<a href="https://www.linkedin.com/in/priya-ragade-9770b9354"
+target="_blank"
+class="btn">
+View LinkedIn
+</a>
+
+</div>
+
+</section>
+
+<section id="about">
+
+<h2 class="section-title">About Me</h2>
+
+<div class="about-box">
+
+<p>
+I am Priya Ragade, a B.Tech CSE (Data Science) student from Nagpur with a strong passion for Frontend Development. I enjoy transforming ideas into interactive and user-friendly web experiences. Through this internship, I am continuously improving my technical skills and gaining practical industry experience.
+</p>
+
+</div>
+
+</section>
+
+<section id="skills">
+
+<h2 class="section-title">Skills</h2>
+
+<div class="skills">
+
+<div class="skill">HTML5</div>
+<div class="skill">CSS3</div>
+<div class="skill">Git</div>
+<div class="skill">GitHub</div>
+<div class="skill">VS Code</div>
+<div class="skill">Responsive Design</div>
+<div class="skill">Problem Solving</div>
+<div class="skill">Communication</div>
+<div class="skill">Team Work</div>
+
+</div>
+
+</section>
+
+<section id="services">
+
+<h2 class="section-title">Services</h2>
+
+<div class="cards">
+
+<div class="card">
+<h3>💻 Web Development</h3>
+<p>Responsive and modern websites.</p>
+</div>
+
+<div class="card">
+<h3>🎨 UI Design</h3>
+<p>Clean and attractive user interfaces.</p>
+</div>
+
+<div class="card">
+<h3>⚡ Git & GitHub</h3>
+<p>Version control and collaboration.</p>
+</div>
+
+<div class="card">
+<h3>🚀 Continuous Learning</h3>
+<p>Always improving and learning.</p>
+</div>
+
+</div>
+
+</section>
+
+<section id="achievements">
+
+<h2 class="section-title">Achievements</h2>
+
+<div class="achievement">✔ Completed Frontend Internship Day 1 Setup</div>
+<div class="achievement">✔ Created Professional Resume Website</div>
+<div class="achievement">✔ Created Blog Website</div>
+<div class="achievement">✔ Created Contact Form Page</div>
+<div class="achievement">✔ Learning Git & GitHub Workflow</div>
+
+</section>
+
+<footer>
+
+<h3>Priya Ragade</h3>
+<p>Frontend Developer Intern | 2026</p>
+
+</footer>
+
+</body>
+</html>
