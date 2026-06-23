@@ -1,0 +1,343 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Day 4 - Flexbox Portfolio</title>
+
+<style>
+
+*{
+margin:0;
+padding:0;
+box-sizing:border-box;
+font-family:'Segoe UI',sans-serif;
+}
+
+body{
+background:linear-gradient(135deg,#0f172a,#1e1b4b);
+color:white;
+}
+
+/* NAVBAR */
+
+.navbar{
+display:flex;
+justify-content:space-between;
+align-items:center;
+padding:20px 8%;
+background:rgba(255,255,255,0.05);
+backdrop-filter:blur(10px);
+position:sticky;
+top:0;
+}
+
+.logo{
+font-size:28px;
+font-weight:bold;
+color:#facc15;
+}
+
+.nav-links{
+display:flex;
+gap:25px;
+}
+
+.nav-links a{
+text-decoration:none;
+color:white;
+transition:.3s;
+}
+
+.nav-links a:hover{
+color:#facc15;
+}
+
+.btn{
+background:#facc15;
+color:black;
+padding:10px 20px;
+border-radius:30px;
+text-decoration:none;
+font-weight:bold;
+transition:.4s;
+}
+
+.btn:hover{
+transform:translateY(-3px);
+}
+
+/* HERO */
+
+.hero{
+display:flex;
+justify-content:space-between;
+align-items:center;
+padding:80px 8%;
+gap:50px;
+min-height:90vh;
+}
+
+.hero-text{
+flex:1;
+}
+
+.hero-text h1{
+font-size:55px;
+color:#facc15;
+}
+
+.hero-text h3{
+margin:15px 0;
+font-size:25px;
+}
+
+.hero-text p{
+line-height:1.8;
+margin-bottom:25px;
+}
+
+.hero-image{
+flex:1;
+display:flex;
+justify-content:center;
+}
+
+.hero-image img{
+width:320px;
+height:320px;
+border-radius:20px;
+object-fit:cover;
+border:4px solid #facc15;
+box-shadow:0 0 30px rgba(250,204,21,.4);
+}
+
+/* FEATURES */
+
+.section-title{
+text-align:center;
+font-size:40px;
+margin:50px 0;
+color:#facc15;
+}
+
+.cards{
+display:flex;
+justify-content:center;
+gap:25px;
+flex-wrap:wrap;
+padding:0 8%;
+}
+
+.card{
+background:rgba(255,255,255,0.08);
+backdrop-filter:blur(10px);
+padding:30px;
+width:250px;
+border-radius:20px;
+text-align:center;
+transition:.5s;
+}
+
+.card:hover{
+transform:translateY(-20px) rotateX(10deg) scale(1.05);
+box-shadow:0 20px 40px rgba(250,204,21,.4);
+}
+
+.card h3{
+color:#facc15;
+margin-bottom:15px;
+}
+
+/* PRICING */
+
+.pricing{
+display:flex;
+justify-content:center;
+gap:25px;
+flex-wrap:wrap;
+padding:50px 8%;
+}
+
+.price-card{
+background:white;
+color:black;
+padding:30px;
+width:280px;
+border-radius:20px;
+text-align:center;
+transition:.4s;
+}
+
+.price-card:hover{
+transform:scale(1.05);
+}
+
+.price{
+font-size:40px;
+font-weight:bold;
+color:#7c3aed;
+margin:15px 0;
+}
+
+/* FOOTER */
+
+footer{
+text-align:center;
+padding:30px;
+margin-top:50px;
+background:black;
+}
+
+@media(max-width:768px){
+
+.hero{
+flex-direction:column;
+text-align:center;
+}
+
+.hero-text h1{
+font-size:40px;
+}
+
+.hero-image img{
+width:220px;
+height:220px;
+}
+
+}
+
+</style>
+</head>
+
+<body>
+
+<nav class="navbar">
+
+<div class="logo">Priya Portfolio</div>
+
+<div class="nav-links">
+<a href="#">Home</a>
+<a href="#">About</a>
+<a href="#">Services</a>
+<a href="#">Contact</a>
+</div>
+
+<a href="#" class="btn">Hire Me</a>
+
+</nav>
+
+<section class="hero">
+
+<div class="hero-text">
+
+<h1>Priya Ragade</h1>
+
+<h3>Aspiring Frontend Developer</h3>
+
+<p>
+B.Tech CSE (Data Science) student from Nagpur.
+Passionate about creating modern, responsive and
+user-friendly websites using HTML, CSS, Git and GitHub.
+</p>
+
+<a href="https://www.linkedin.com/in/priya-ragade-9770b9354" class="btn" target="_blank">
+LinkedIn Profile
+</a>
+
+</div>
+
+<div class="hero-image">
+
+<img src="image.png" alt="Priya">
+
+</div>
+
+</section>
+
+<h2 class="section-title">Features</h2>
+
+<section class="cards">
+
+<div class="card">
+<h3>💻 Web Design</h3>
+<p>Modern and responsive websites.</p>
+</div>
+
+<div class="card">
+<h3>🎨 UI Design</h3>
+<p>Clean and attractive layouts.</p>
+</div>
+
+<div class="card">
+<h3>⚡ Git & GitHub</h3>
+<p>Version control and collaboration.</p>
+</div>
+
+<div class="card">
+<h3>🚀 Fast Learning</h3>
+<p>Continuously improving skills.</p>
+</div>
+
+</section>
+<h2 class="section-title">My Stats</h2>
+
+<section class="cards">
+
+<div class="card">
+<h3>4+</h3>
+<p>Projects Completed</p>
+</div>
+
+<div class="card">
+<h3>100%</h3>
+<p>Dedication</p>
+</div>
+
+<div class="card">
+<h3>7+</h3>
+<p>Skills Learned</p>
+</div>
+
+<div class="card">
+<h3>2026</h3>
+<p>Frontend Internship</p>
+</div>
+
+</section>
+<h2 class="section-title">Pricing Cards</h2>
+
+<section class="pricing">
+
+<div class="price-card">
+<h3>Basic</h3>
+<div class="price">₹499</div>
+<p>Simple Landing Page</p>
+</div>
+
+<div class="price-card">
+<h3>Standard</h3>
+<div class="price">₹999</div>
+<p>Responsive Website</p>
+</div>
+
+<div class="price-card">
+<h3>Premium</h3>
+<div class="price">₹1999</div>
+<p>Professional Portfolio</p>
+</div>
+
+</section>
+
+<footer>
+
+<h3>Designed By Priya Ragade</h3>
+
+<p>Frontend Developer Intern</p>
+<p>Built with HTML, CSS & Flexbox</p>
+<p>© 2026 Priya Ragade</p>
+
+</footer>
+
+</body>
+</html>

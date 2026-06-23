@@ -62,3 +62,19 @@
 ### Files
 
 - portfolio.html
+## Week 1 - Day 4
+
+### Tasks Completed
+
+- Learned Flexbox Layout
+- Created Navigation Bar
+- Created Hero Section
+- Built Feature Cards
+- Built Stats Section
+- Built Pricing Cards
+- Added Hover Effects
+- Added Responsive Design
+
+### Files
+
+- day4.html
