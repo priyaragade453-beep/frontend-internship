@@ -128,3 +128,34 @@ Tasks Completed
 File
 
 - day6.html
+
+Week 1 - Day 7
+
+Sprint Project - Personal Portfolio Website
+
+Features
+
+- Sticky Navigation Bar
+- Hero Section with Profile Photo
+- About Me Section
+- Skills Section
+- Projects Showcase
+- Project Gallery
+- Contact Form
+- Responsive Design
+
+Technologies Used
+
+- HTML5
+- CSS3
+- Flexbox
+- CSS Grid
+- Media Queries
+
+File
+
+- day7.html
+
+Outcome
+
+Successfully created a professional and responsive personal portfolio website showcasing skills, projects and contact information.

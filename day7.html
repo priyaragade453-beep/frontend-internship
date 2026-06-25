@@ -1,0 +1,405 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Priya Ragade Portfolio</title>
+
+<style>
+
+*{
+margin:0;
+padding:0;
+box-sizing:border-box;
+font-family:'Segoe UI',sans-serif;
+scroll-behavior:smooth;
+}
+
+body{
+background:linear-gradient(135deg,#0a0a0a,#111827);
+color:white;
+}
+
+/* NAVBAR */
+
+.navbar{
+position:sticky;
+top:0;
+display:flex;
+justify-content:space-between;
+align-items:center;
+padding:20px 8%;
+background:rgba(255,255,255,0.05);
+backdrop-filter:blur(10px);
+z-index:1000;
+}
+
+.logo{
+font-size:28px;
+font-weight:bold;
+color:#facc15;
+}
+
+.nav-links{
+display:flex;
+gap:25px;
+}
+
+.nav-links a{
+text-decoration:none;
+color:white;
+transition:.3s;
+}
+
+.nav-links a:hover{
+color:#facc15;
+}
+
+/* HERO SECTION */
+
+.hero{
+min-height:100vh;
+display:flex;
+flex-direction:column;
+justify-content:center;
+align-items:center;
+text-align:center;
+padding:40px;
+}
+
+.hero img{
+width:220px;
+height:220px;
+border-radius:50%;
+object-fit:cover;
+border:5px solid #facc15;
+box-shadow:0 0 30px rgba(250, 202, 13, 0.5);
+}
+
+.hero h1{
+font-size:60px;
+margin-top:20px;
+color:#facc15;
+}
+
+.hero h3{
+margin-top:10px;
+font-size:25px;
+}
+
+.hero p{
+max-width:700px;
+line-height:1.8;
+margin:20px auto;
+}
+
+.btn{
+display:inline-block;
+padding:12px 25px;
+margin:10px;
+background:#facc15;
+color:black;
+text-decoration:none;
+font-weight:bold;
+border-radius:30px;
+transition:.4s;
+}
+
+.btn:hover{
+transform:translateY(-5px);
+}
+
+/* SECTION */
+
+.section{
+padding:80px 8%;
+}
+
+.section-title{
+text-align:center;
+font-size:42px;
+margin-bottom:40px;
+color:#facc15;
+}
+/* ABOUT SECTION */
+
+.about-card{
+background:rgba(255,255,255,0.08);
+padding:35px;
+border-radius:20px;
+backdrop-filter:blur(10px);
+line-height:1.8;
+text-align:center;
+}
+
+/* SKILLS */
+
+.skills{
+display:flex;
+flex-wrap:wrap;
+justify-content:center;
+gap:15px;
+}
+
+.skill{
+background:#facc15;
+color:black;
+padding:12px 20px;
+border-radius:30px;
+font-weight:bold;
+transition:.4s;
+}
+
+.skill:hover{
+transform:translateY(-5px);
+}
+
+/* PROJECTS */
+
+.projects{
+display:grid;
+grid-template-columns:repeat(auto-fit,minmax(250px,1fr));
+gap:25px;
+}
+
+.project-card{
+background:rgba(255,255,255,0.08);
+padding:25px;
+border-radius:20px;
+text-align:center;
+transition:.5s;
+backdrop-filter:blur(10px);
+}
+
+.project-card:hover{
+transform:translateY(-10px);
+}
+
+.project-card h3{
+color:#facc15;
+margin-bottom:15px;
+}
+
+</style>
+</head>
+
+<body>
+
+<nav class="navbar">
+
+<div class="logo">Priya Portfolio</div>
+
+<div class="nav-links">
+<a href="#about">About</a>
+<a href="#skills">Skills</a>
+<a href="#projects">Projects</a>
+<a href="#contact">Contact</a>
+</div>
+
+</nav>
+
+<section class="hero">
+
+<img src="WhatsApp Image 2026-06-25 at 9.11.44 PM.jpeg" alt="Priya">
+
+<h1>Priya Ragade</h1>
+
+<h3>Aspiring Frontend Developer</h3>
+
+<p>
+B.Tech CSE (Data Science) student from Nagpur.
+Passionate about creating modern, responsive and
+user-friendly websites.
+</p>
+
+<a href="https://www.linkedin.com/in/priya-ragade-9770b9354" target="_blank" class="btn">
+LinkedIn
+</a>
+
+</section>
+
+<section class="section" id="about">
+
+<h2 class="section-title">About Me</h2>
+
+<div class="about-card">
+
+<p>
+I am Priya Ragade, a B.Tech CSE (Data Science)
+student from Nagpur with a strong passion for
+Frontend Development. I enjoy building modern,
+responsive and user-friendly websites while
+continuously improving my technical skills.
+</p>
+
+</div>
+
+</section>
+
+<section class="section" id="skills">
+
+<h2 class="section-title">Skills</h2>
+
+<div class="skills">
+
+<div class="skill">HTML5</div>
+<div class="skill">CSS3</div>
+<div class="skill">Git</div>
+<div class="skill">GitHub</div>
+<div class="skill">VS Code</div>
+<div class="skill">Responsive Design</div>
+<div class="skill">Problem Solving</div>
+<div class="skill">Communication</div>
+
+</div>
+
+</section>
+
+<section class="section" id="projects">
+
+<h2 class="section-title">Projects</h2>
+
+<div class="projects">
+
+<div class="project-card">
+<h3>Resume Website</h3>
+<p>Professional Resume created using HTML and CSS.</p>
+</div>
+
+<div class="project-card">
+<h3>Blog Website</h3>
+<p>Personal blog page with semantic HTML structure.</p>
+</div>
+
+<div class="project-card">
+<h3>Contact Form</h3>
+<p>Responsive contact form with user-friendly layout.</p>
+</div>
+
+<div class="project-card">
+<h3>CSS Grid Dashboard</h3>
+<p>Modern dashboard designed using CSS Grid.</p>
+</div>
+
+<div class="project-card">
+<h3>Responsive Portfolio</h3>
+<p>Portfolio website optimized for all devices.</p>
+</div>
+
+</div>
+
+</section>
+<section class="section">
+
+<h2 class="section-title">Project Gallery</h2>
+
+<div class="projects">
+
+<div class="project-card">
+<img src="Screenshot 2026-06-25 205431.png" width="100%">
+</div>
+
+<div class="project-card">
+<img src="Screenshot 2026-06-25 205539.png" width="100%">
+</div>
+
+<div class="project-card">
+<img src="Screenshot 2026-06-25 205920.png" width="100%">
+</div>
+
+<div class="project-card">
+<img src="Screenshot 2026-06-25 210020.png" width="100%">
+</div>
+
+<div class="project-card">
+<img src="Screenshot 2026-06-25 210050.png" width="100%">
+</div>
+
+<div class="project-card">
+<img src="Screenshot 2026-06-25 210112.png" width="100%">
+</div>
+
+</div>
+
+</section>
+
+<section class="section" id="contact">
+
+<h2 class="section-title">Contact Me</h2>
+
+<div class="about-card">
+
+<form>
+
+<input type="text"
+placeholder="Enter Your Name"
+style="width:100%;padding:12px;margin:10px 0;border:none;border-radius:10px;">
+
+<input type="email"
+placeholder="Enter Your Email"
+style="width:100%;padding:12px;margin:10px 0;border:none;border-radius:10px;">
+
+<textarea
+placeholder="Enter Your Message"
+rows="5"
+style="width:100%;padding:12px;margin:10px 0;border:none;border-radius:10px;"></textarea>
+
+<br>
+
+<button class="btn">
+Send Message
+</button>
+
+</form>
+
+</div>
+
+</section>
+
+<footer>
+
+<h3>Designed & Developed By Priya Ragade</h3>
+
+<p>Frontend Developer Intern</p>
+
+<p>Week 1 Sprint Project - Day 7</p>
+
+<p>© 2026 All Rights Reserved</p>
+
+</footer>
+
+<style>
+
+/* MOBILE RESPONSIVE */
+
+@media(max-width:768px){
+
+.navbar{
+flex-direction:column;
+gap:15px;
+}
+
+.nav-links{
+flex-wrap:wrap;
+justify-content:center;
+}
+
+.hero h1{
+font-size:40px;
+}
+
+.hero img{
+width:170px;
+height:170px;
+}
+
+.section-title{
+font-size:32px;
+}
+
+}
+
+</style>
+
+</body>
+</html>
