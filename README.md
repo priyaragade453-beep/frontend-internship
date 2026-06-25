@@ -77,4 +77,30 @@
 
 ### Files
 
-- day4.html
+Week 1 - Day 5
+
+CSS Grid
+
+Topics Learned
+
+- CSS Grid Layout
+- Grid Rows and Columns
+- Responsive Grid Design
+- Dashboard UI Layout
+- Image Gallery Creation
+
+Tasks Completed
+
+- Created a Premium Dashboard UI using CSS Grid
+- Added Statistics Cards
+- Created a 3×3 Image Gallery
+- Added Hover Effects and Modern Styling
+- Added Responsive Layout for Different Screen Sizes
+
+Project File
+
+- day5.html
+
+Outcome
+
+Successfully learned CSS Grid and built a modern dashboard with an image gallery using responsive design principles.
