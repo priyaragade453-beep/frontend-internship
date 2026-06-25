@@ -104,3 +104,27 @@ Project File
 Outcome
 
 Successfully learned CSS Grid and built a modern dashboard with an image gallery using responsive design principles.
+
+Week 1 - Day 6
+
+Responsive Design
+
+Topics Learned
+
+- Media Queries
+- Mobile First Design
+- Responsive Layout
+- Responsive Navigation
+- Flexible Grid System
+
+Tasks Completed
+
+- Created Mobile Responsive Layout
+- Added Tablet Responsive Layout
+- Added Desktop Responsive Layout
+- Applied Media Queries
+- Optimized Dashboard and Gallery for All Devices
+
+File
+
+- day6.html
