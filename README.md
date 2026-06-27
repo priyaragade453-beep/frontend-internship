@@ -77,7 +77,7 @@
 
 ### Files
 
-Week 1 - Day 5
+## Week 1 - Day 5
 
 CSS Grid
 
@@ -105,7 +105,7 @@ Outcome
 
 Successfully learned CSS Grid and built a modern dashboard with an image gallery using responsive design principles.
 
-Week 1 - Day 6
+## Week 1 - Day 6
 
 Responsive Design
 
@@ -129,7 +129,7 @@ File
 
 - day6.html
 
-Week 1 - Day 7
+ ## Week 1 - Day 7
 
 Sprint Project - Personal Portfolio Website
 
@@ -159,3 +159,24 @@ File
 Outcome
 
 Successfully created a professional and responsive personal portfolio website showcasing skills, projects and contact information.
+
+## Week 2
+
+### Day 8 – JavaScript Variables & Operators
+
+#### Project:
+Premium JavaScript Calculator with BMI Calculator
+
+#### Features:
+- Interactive Calculator
+- BMI Calculator
+- Calculation History
+- Live Date & Time
+- Dark/Light Theme
+- Keyboard Support
+- Responsive Design
+
+#### Technologies Used:
+- HTML5
+- CSS3
+- JavaScript (Variables & Operators)
