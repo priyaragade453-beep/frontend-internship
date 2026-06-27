@@ -180,3 +180,21 @@ Premium JavaScript Calculator with BMI Calculator
 - HTML5
 - CSS3
 - JavaScript (Variables & Operators)
+### Day 9 – Functions & Loops
+
+#### Project:
+JavaScript Mini Apps Dashboard
+
+#### Features:
+- Multiplication Table Generator
+- Factorial Calculator
+- Guess The Number Game
+- Score Board
+- Live Clock
+- Dark/Light Theme
+- Responsive UI
+
+#### Technologies Used:
+- HTML5
+- CSS3
+- JavaScript (Functions & Loops)

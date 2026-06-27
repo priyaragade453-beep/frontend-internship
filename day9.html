@@ -1,0 +1,649 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+
+<meta charset="UTF-8">
+
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+<title>Day 9 - JavaScript Mini Apps Dashboard</title>
+
+<style>
+
+*{
+
+margin:0;
+
+padding:0;
+
+box-sizing:border-box;
+
+font-family:'Segoe UI',sans-serif;
+
+}
+
+body{
+
+background:linear-gradient(-45deg,#0f172a,#1e293b,#312e81,#7c3aed);
+
+background-size:400% 400%;
+
+animation:bg 12s ease infinite;
+
+min-height:100vh;
+
+padding:40px;
+
+color:white;
+
+}
+
+@keyframes bg{
+
+0%{background-position:0% 50%;}
+
+50%{background-position:100% 50%;}
+
+100%{background-position:0% 50%;}
+
+}
+
+.container{
+
+max-width:1300px;
+
+margin:auto;
+
+}
+
+.header{
+
+background:rgba(255,255,255,.08);
+
+backdrop-filter:blur(15px);
+
+padding:25px;
+
+border-radius:20px;
+
+text-align:center;
+
+margin-bottom:30px;
+
+box-shadow:0 20px 40px rgba(0,0,0,.35);
+
+}
+
+.header h1{
+
+font-size:38px;
+
+color:#facc15;
+
+}
+
+.header p{
+
+margin-top:10px;
+
+color:#ddd;
+
+font-size:18px;
+
+}
+
+.topbar{
+
+display:flex;
+
+justify-content:space-between;
+
+align-items:center;
+
+margin-top:20px;
+
+}
+
+#clock{
+
+font-size:18px;
+
+font-weight:bold;
+
+color:#38bdf8;
+
+}
+
+.themeBtn{
+
+padding:10px 20px;
+
+border:none;
+
+border-radius:30px;
+
+background:#facc15;
+
+font-weight:bold;
+
+cursor:pointer;
+
+transition:.3s;
+
+}
+
+.themeBtn:hover{
+
+transform:scale(1.05);
+
+}
+
+.dashboard{
+
+display:grid;
+
+grid-template-columns:repeat(auto-fit,minmax(350px,1fr));
+
+gap:30px;
+
+}
+
+.card{
+
+background:rgba(255,255,255,.08);
+
+backdrop-filter:blur(15px);
+
+padding:25px;
+
+border-radius:20px;
+
+box-shadow:0 20px 40px rgba(0,0,0,.35);
+
+transition:.4s;
+
+}
+
+.card:hover{
+
+transform:translateY(-10px);
+
+}
+
+.card h2{
+
+text-align:center;
+
+margin-bottom:20px;
+
+color:#facc15;
+
+}
+
+.input{
+
+width:100%;
+
+padding:15px;
+
+font-size:18px;
+
+border:none;
+
+border-radius:12px;
+
+margin-bottom:15px;
+
+outline:none;
+
+}
+
+.btn{
+
+width:100%;
+
+padding:15px;
+
+border:none;
+
+border-radius:12px;
+
+background:#7c3aed;
+
+color:white;
+
+font-size:18px;
+
+cursor:pointer;
+
+font-weight:bold;
+
+transition:.3s;
+
+}
+
+.btn:hover{
+
+background:#9333ea;
+
+transform:scale(1.03);
+
+}
+
+.output{
+
+margin-top:20px;
+
+background:#111827;
+
+padding:20px;
+
+border-radius:12px;
+
+min-height:120px;
+
+line-height:1.8;
+
+font-size:18px;
+
+overflow:auto;
+
+}
+
+footer{
+
+margin-top:40px;
+
+text-align:center;
+
+color:#ddd;
+
+font-size:16px;
+
+}
+
+@media(max-width:768px){
+
+.topbar{
+
+flex-direction:column;
+
+gap:15px;
+
+}
+
+.header h1{
+
+font-size:28px;
+
+}
+
+}
+
+</style>
+
+</head>
+<body>
+
+<div class="container">
+
+<div class="header">
+
+<h1>🚀 JavaScript Mini Apps Dashboard</h1>
+
+<p>Frontend Development Internship • Week 2 • Day 9</p>
+
+<div class="topbar">
+
+<div id="clock">Loading Time...</div>
+
+<button class="themeBtn" onclick="toggleTheme()">
+
+🌙 Dark / ☀️ Light
+
+</button>
+
+</div>
+
+</div>
+
+<div class="dashboard">
+
+<!-- ================= Multiplication Table ================= -->
+
+<div class="card">
+
+<h2>🔢 Multiplication Table</h2>
+
+<input
+type="number"
+id="tableNumber"
+class="input"
+placeholder="Enter a Number">
+
+<button
+class="btn"
+onclick="generateTable()">
+
+Generate Table
+
+</button>
+
+<div
+id="tableOutput"
+class="output">
+
+Your table will appear here...
+
+</div>
+
+</div>
+
+<!-- ================= Factorial Calculator ================= -->
+
+<div class="card">
+
+<h2>🧮 Factorial Calculator</h2>
+
+<input
+type="number"
+id="factorialNumber"
+class="input"
+placeholder="Enter a Number">
+
+<button
+class="btn"
+onclick="calculateFactorial()">
+
+Calculate Factorial
+
+</button>
+
+<div
+id="factorialOutput"
+class="output">
+
+Factorial result will appear here...
+
+</div>
+
+</div>
+
+<!-- ================= Guess The Number ================= -->
+
+<div class="card">
+
+<h2>🎮 Guess The Number</h2>
+
+<p style="text-align:center;margin-bottom:15px;">
+
+Guess a number between <b>1 and 100</b>
+
+</p>
+<div class="output" id="scoreBoard">
+
+🏆 Best Score : -
+
+<br><br>
+
+🎯 Current Attempts : 0
+
+<br><br>
+
+🎮 Games Played : 0
+
+</div>
+
+<br>
+<input
+type="number"
+id="guessInput"
+class="input"
+placeholder="Enter your Guess">
+
+<button
+class="btn"
+onclick="checkGuess()">
+
+Check Guess
+
+</button>
+
+<div
+id="guessOutput"
+class="output">
+
+Start Playing...
+
+</div>
+
+<br>
+
+<button
+class="btn"
+style="background:#22c55e;"
+onclick="restartGame()">
+
+🔄 Restart Game
+
+</button>
+
+</div>
+
+</div>
+
+<footer>
+
+<h3>Designed & Developed by Priya Ragade ❤️</h3>
+
+<p>Frontend Developer Intern | Vertexon Technologies</p>
+
+</footer>
+<script>
+
+// ======================
+// Multiplication Table
+// ======================
+
+function generateTable(){
+
+let num=document.getElementById("tableNumber").value;
+
+let output=document.getElementById("tableOutput");
+
+if(num===""){
+
+output.innerHTML="⚠️ Please enter a number.";
+
+return;
+
+}
+
+let table="";
+
+for(let i=1;i<=10;i++){
+
+table+=`${num} × ${i} = ${num*i}<br>`;
+
+}
+
+output.innerHTML=table;
+
+}
+
+// ======================
+// Factorial Calculator
+// ======================
+
+function calculateFactorial(){
+
+let num=parseInt(document.getElementById("factorialNumber").value);
+
+let output=document.getElementById("factorialOutput");
+
+if(isNaN(num) || num<0){
+
+output.innerHTML="⚠️ Enter a valid positive number.";
+
+return;
+
+}
+
+let fact=1;
+
+for(let i=1;i<=num;i++){
+
+fact*=i;
+
+}
+
+output.innerHTML=`✅ Factorial of <b>${num}</b> is <br><br><h2>${fact}</h2>`;
+
+}
+
+// ======================
+// Guess The Number Game
+// ======================
+
+let randomNumber = Math.floor(Math.random() * 100) + 1;
+
+let attempts = 0;
+
+let gamesPlayed = 0;
+
+let bestScore = null;
+
+function checkGuess(){
+
+let guess=parseInt(document.getElementById("guessInput").value);
+
+let output=document.getElementById("guessOutput");
+
+let score=document.getElementById("scoreBoard");
+
+if(isNaN(guess)){
+
+output.innerHTML="⚠️ Enter a number.";
+
+return;
+
+}
+
+attempts++;
+
+score.innerHTML=
+"🏆 Best Score : "+(bestScore===null?"-":bestScore)+
+"<br><br>🎯 Current Attempts : "+attempts+
+"<br><br>🎮 Games Played : "+gamesPlayed;
+
+if(guess===randomNumber){
+
+gamesPlayed++;
+
+if(bestScore===null || attempts<bestScore){
+
+bestScore=attempts;
+
+}
+
+output.innerHTML=
+"🎉 Congratulations!<br><br>You guessed correctly in <b>"+attempts+"</b> attempts.";
+
+score.innerHTML=
+"🏆 Best Score : "+bestScore+
+"<br><br>🎯 Current Attempts : "+attempts+
+"<br><br>🎮 Games Played : "+gamesPlayed;
+
+}
+
+else if(guess<randomNumber){
+
+output.innerHTML="📉 Too Low! Try Again.";
+
+}
+
+else{
+
+output.innerHTML="📈 Too High! Try Again.";
+
+}
+
+}
+
+function restartGame(){
+
+randomNumber=Math.floor(Math.random()*100)+1;
+
+attempts=0;
+
+document.getElementById("guessInput").value="";
+
+document.getElementById("guessOutput").innerHTML="🎮 New Game Started!";
+
+document.getElementById("scoreBoard").innerHTML=
+"🏆 Best Score : "+(bestScore===null?"-":bestScore)+
+"<br><br>🎯 Current Attempts : 0"+
+"<br><br>🎮 Games Played : "+gamesPlayed;
+
+}
+
+// ======================
+// Live Clock
+// ======================
+
+function updateClock(){
+
+let now=new Date();
+
+document.getElementById("clock").innerHTML=
+
+"📅 "+now.toLocaleDateString()+
+"<br>🕒 "+now.toLocaleTimeString();
+
+}
+
+setInterval(updateClock,1000);
+
+updateClock();
+
+// ======================
+// Theme Toggle
+// ======================
+
+let dark=true;
+
+function toggleTheme(){
+
+if(dark){
+
+document.body.style.background="#f3f4f6";
+document.body.style.color="#111";
+
+document.querySelectorAll(".card").forEach(card=>{
+
+card.style.background="white";
+card.style.color="black";
+
+});
+
+document.querySelector(".header").style.background="white";
+document.querySelector(".header").style.color="black";
+
+dark=false;
+
+}
+
+else{
+
+location.reload();
+
+}
+
+}
+
+</script>
+
+</body>
+
+</html>
