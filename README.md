@@ -198,3 +198,27 @@ JavaScript Mini Apps Dashboard
 - HTML5
 - CSS3
 - JavaScript (Functions & Loops)
+
+## Day 10 – Student Management System
+
+## Project: Premium Student Management Dashboard
+
+Features:
+
+- Add Student
+- Edit Student
+- Delete Student
+- Search Student
+- Automatic Grade Calculation
+- Statistics Dashboard
+- Topper Highlight
+- Local Storage
+- Live Date & Time
+- Dark/Light Theme
+- Responsive Design
+
+##  Technologies Used:
+
+- HTML5
+- CSS3
+- JavaScript
