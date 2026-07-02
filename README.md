@@ -263,3 +263,25 @@ Features:
 * CSS3
 * JavaScript
 
+### Day 13 – API Integration
+
+## **Project:** Premium API Dashboard
+
+## **Features:**
+
+* Fetch Users using Fetch API
+* Display User Information
+* Total Users, Posts & Comments Dashboard
+* Live Search
+* Loading Indicator
+* Error Handling
+* Live Clock
+* Dark/Light Theme
+* Responsive Design
+
+## **Technologies Used:**
+
+* HTML5
+* CSS3
+* JavaScript
+* Fetch API
