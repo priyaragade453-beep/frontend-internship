@@ -285,3 +285,26 @@ Features:
 * CSS3
 * JavaScript
 * Fetch API
+
+### Day 14 – Sprint Project
+
+## **Project:** Premium Task Manager Pro
+
+## **Features:**
+
+* Add, Edit & Delete Tasks
+* Complete / Undo Tasks
+* Due Date Management
+* Priority Levels (High, Medium, Low)
+* Live Search
+* Statistics Dashboard
+* Local Storage
+* Live Clock
+* Dark/Light Theme
+* Responsive Glassmorphism UI
+
+## **Technologies Used:**
+
+* HTML5
+* CSS3
+* JavaScript
