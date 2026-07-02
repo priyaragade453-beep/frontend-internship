@@ -239,3 +239,27 @@ Features:
 - HTML5
 - CSS3
 - JavaScript
+
+### Day 12 – Interactive To-Do App
+
+## **Project:** Premium To-Do Task Manager
+
+## **Features:**
+
+* Add Task
+* Delete Task
+* Complete / Undo Task
+* Search Tasks
+* Task Priority
+* Statistics Dashboard
+* Local Storage
+* Live Clock
+* Dark/Light Theme
+* Responsive Design
+
+## **Technologies Used:**
+
+* HTML5
+* CSS3
+* JavaScript
+
