@@ -1,0 +1,521 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+
+<meta charset="UTF-8">
+
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+<title>Day 11 - DOM Manipulation Dashboard</title>
+
+<style>
+
+*{
+margin:0;
+padding:0;
+box-sizing:border-box;
+font-family:'Segoe UI',sans-serif;
+}
+
+body{
+
+background:linear-gradient(-45deg,#0f172a,#1e293b,#312e81,#7c3aed);
+background-size:400% 400%;
+animation:bg 12s ease infinite;
+min-height:100vh;
+padding:40px;
+color:white;
+
+}
+
+@keyframes bg{
+
+0%{background-position:0% 50%;}
+50%{background-position:100% 50%;}
+100%{background-position:0% 50%;}
+
+}
+
+.container{
+
+max-width:1300px;
+margin:auto;
+
+}
+
+.header{
+
+background:rgba(255,255,255,.08);
+backdrop-filter:blur(15px);
+padding:25px;
+border-radius:20px;
+text-align:center;
+margin-bottom:30px;
+box-shadow:0 20px 40px rgba(0,0,0,.35);
+
+}
+
+.header h1{
+
+font-size:38px;
+color:#facc15;
+
+}
+
+.header p{
+
+margin-top:10px;
+color:#ddd;
+
+}
+
+.topbar{
+
+display:flex;
+justify-content:space-between;
+align-items:center;
+margin-top:20px;
+
+}
+
+#clock{
+
+font-size:18px;
+font-weight:bold;
+color:#38bdf8;
+
+}
+
+.themeBtn{
+
+padding:10px 20px;
+border:none;
+border-radius:30px;
+background:#facc15;
+font-weight:bold;
+cursor:pointer;
+transition:.3s;
+
+}
+
+.themeBtn:hover{
+
+transform:scale(1.05);
+
+}
+
+.dashboard{
+
+display:grid;
+grid-template-columns:repeat(auto-fit,minmax(350px,1fr));
+gap:25px;
+
+}
+
+.card{
+
+background:rgba(255,255,255,.08);
+backdrop-filter:blur(15px);
+padding:25px;
+border-radius:20px;
+text-align:center;
+box-shadow:0 20px 40px rgba(0,0,0,.35);
+transition:.4s;
+
+}
+
+.card:hover{
+
+transform:translateY(-8px);
+
+}
+
+.card h2{
+
+color:#facc15;
+margin-bottom:20px;
+
+}
+
+.value{
+
+font-size:60px;
+font-weight:bold;
+margin:20px 0;
+color:#38bdf8;
+
+}
+
+.btn{
+
+padding:12px 20px;
+margin:6px;
+border:none;
+border-radius:10px;
+cursor:pointer;
+font-size:16px;
+font-weight:bold;
+transition:.3s;
+
+}
+
+.btn:hover{
+
+transform:scale(1.05);
+
+}
+
+.green{
+
+background:#22c55e;
+color:white;
+
+}
+
+.red{
+
+background:#ef4444;
+color:white;
+
+}
+
+.blue{
+
+background:#3b82f6;
+color:white;
+
+}
+
+.orange{
+
+background:#f59e0b;
+color:white;
+
+}
+
+input{
+
+width:100%;
+padding:14px;
+border:none;
+border-radius:10px;
+font-size:16px;
+margin:15px 0;
+
+}
+
+.passwordBox{
+
+display:flex;
+gap:10px;
+
+}
+
+.passwordBox input{
+
+flex:1;
+
+}
+
+.colorBox{
+
+width:100%;
+height:120px;
+border-radius:15px;
+margin-top:20px;
+background:white;
+transition:.4s;
+
+}
+
+footer{
+
+margin-top:40px;
+text-align:center;
+color:#ddd;
+
+}
+
+@media(max-width:768px){
+
+.topbar{
+
+flex-direction:column;
+gap:15px;
+
+}
+
+.header h1{
+
+font-size:30px;
+
+}
+
+.value{
+
+font-size:45px;
+
+}
+
+}
+
+</style>
+
+</head>
+<body>
+
+<div class="container">
+
+<!-- HEADER -->
+
+<div class="header">
+
+<h1>🚀 DOM Manipulation Dashboard</h1>
+
+<p>Frontend Development Internship • Week 3 • Day 11</p>
+
+<div class="topbar">
+
+<div id="clock">Loading Time...</div>
+
+<button class="themeBtn" onclick="toggleTheme()">
+🌙 Dark / ☀️ Light
+</button>
+
+</div>
+
+</div>
+
+<!-- DASHBOARD -->
+
+<div class="dashboard">
+
+<!-- Counter App -->
+
+<div class="card">
+
+<h2>🔢 Counter App</h2>
+
+<div class="value" id="count">0</div>
+
+<button class="btn green" onclick="increase()">
+➕ Increase
+</button>
+
+<button class="btn red" onclick="decrease()">
+➖ Decrease
+</button>
+
+<button class="btn blue" onclick="resetCounter()">
+🔄 Reset
+</button>
+
+</div>
+
+<!-- Color Changer -->
+
+<div class="card">
+
+<h2>🎨 Color Changer</h2>
+
+<p>Click the button to change the color.</p>
+
+<button class="btn orange" onclick="changeColor()">
+🎨 Change Color
+</button>
+
+<div class="colorBox" id="colorBox"></div>
+
+</div>
+
+<!-- Password Generator -->
+
+<div class="card">
+
+<h2>🔐 Password Generator</h2>
+
+<div class="passwordBox">
+
+<input
+type="text"
+id="password"
+placeholder="Generated Password"
+readonly>
+
+<button
+class="btn green"
+onclick="generatePassword()">
+
+Generate
+
+</button>
+
+</div>
+
+<br>
+
+<button
+class="btn blue"
+onclick="copyPassword()">
+
+📋 Copy Password
+
+</button>
+
+</div>
+
+</div>
+
+<footer>
+
+<h3>Designed & Developed by Priya Ragade ❤️</h3>
+
+<p>Frontend Developer Intern | Vertexon Technologies</p>
+
+</footer>
+<script>
+
+// ================= LIVE CLOCK =================
+
+function updateClock(){
+
+let now = new Date();
+
+document.getElementById("clock").innerHTML =
+"📅 " + now.toLocaleDateString() +
+"<br>🕒 " + now.toLocaleTimeString();
+
+}
+
+updateClock();
+setInterval(updateClock,1000);
+
+// ================= THEME TOGGLE =================
+
+let dark = true;
+
+function toggleTheme(){
+
+if(dark){
+
+document.body.style.background="#f3f4f6";
+document.body.style.color="#111";
+
+document.querySelectorAll(".card,.header").forEach(card=>{
+
+card.style.background="white";
+card.style.color="black";
+
+});
+
+dark=false;
+
+}
+
+else{
+
+location.reload();
+
+}
+
+}
+
+// ================= COUNTER =================
+
+let count = 0;
+
+function increase(){
+
+count++;
+
+document.getElementById("count").innerHTML = count;
+
+}
+
+function decrease(){
+
+count--;
+
+document.getElementById("count").innerHTML = count;
+
+}
+
+function resetCounter(){
+
+count = 0;
+
+document.getElementById("count").innerHTML = count;
+
+}
+
+// ================= COLOR CHANGER =================
+
+function changeColor(){
+
+let colors = [
+
+"#ef4444",
+"#22c55e",
+"#3b82f6",
+"#f59e0b",
+"#8b5cf6",
+"#06b6d4",
+"#ec4899",
+"#14b8a6",
+"#f97316",
+"#84cc16"
+
+];
+
+let random = Math.floor(Math.random()*colors.length);
+
+document.getElementById("colorBox").style.background = colors[random];
+
+}
+
+// ================= PASSWORD GENERATOR =================
+
+function generatePassword(){
+
+let chars="ABCDEFGHIJKLMNOPQRSTUVWXYZabcdefghijklmnopqrstuvwxyz0123456789@#$%&*!";
+
+let password="";
+
+for(let i=0;i<12;i++){
+
+password += chars.charAt(Math.floor(Math.random()*chars.length));
+
+}
+
+document.getElementById("password").value=password;
+
+}
+
+// ================= COPY PASSWORD =================
+
+function copyPassword(){
+
+let pass=document.getElementById("password");
+
+if(pass.value==""){
+
+alert("Generate password first!");
+
+return;
+
+}
+
+pass.select();
+
+navigator.clipboard.writeText(pass.value);
+
+alert("✅ Password Copied!");
+
+}
+
+</script>
+
+</body>
+
+</html>

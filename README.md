@@ -222,3 +222,20 @@ Features:
 - HTML5
 - CSS3
 - JavaScript
+
+### Day 11 – DOM Manipulation
+
+## **Project:** DOM Manipulation Dashboard
+
+## **Features:**
+- Counter App
+- Color Changer
+- Password Generator
+- Live Clock
+- Theme Toggle
+- Responsive Design
+
+## **Technologies Used:**
+- HTML5
+- CSS3
+- JavaScript
