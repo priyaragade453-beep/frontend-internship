@@ -329,3 +329,5 @@ Project: React Reusable Card Components
 - Vite
 - JavaScript
 - CSS3
+
+## Day 16 - React Counter App Completed
