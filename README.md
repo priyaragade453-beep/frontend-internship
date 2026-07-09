@@ -308,3 +308,24 @@ Features:
 * HTML5
 * CSS3
 * JavaScript
+
+## Day 15 – React Setup & Reusable Card Components
+
+Project: React Reusable Card Components
+
+## Features:
+
+- React + Vite Project Setup
+- JSX
+- Functional Components
+- Reusable Card Component
+- Props
+- Component Import & Export
+- Responsive Card Layout
+
+ ## Technologies Used:
+
+- React
+- Vite
+- JavaScript
+- CSS3
