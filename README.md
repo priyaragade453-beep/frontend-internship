@@ -544,3 +544,32 @@ A React Password Generator that creates secure random passwords and allows users
 ## ✅ Project Status
 Completed Successfully ✔️
 
+# Day 23 - React BMI Calculator
+
+## 📌 Project Overview
+A React BMI Calculator that calculates Body Mass Index (BMI) based on height and weight and displays the corresponding health category.
+
+## 🚀 Features
+- BMI Calculation
+- Health Category Detection
+- Underweight, Normal, Overweight & Obese Status
+- Input Validation
+- Responsive UI
+
+## 🛠️ Technologies Used
+- React.js
+- JavaScript (ES6)
+- JSX
+- CSS3
+- Vite
+
+## 📚 Concepts Learned
+- useState Hook
+- Event Handling
+- Conditional Rendering
+- Form Handling
+- Mathematical Calculations
+
+## ✅ Project Status
+Completed Successfully ✔️
+
