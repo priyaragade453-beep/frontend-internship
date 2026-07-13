@@ -691,3 +691,34 @@ A React Expense Tracker application that allows users to add expenses, calculate
 ## ✅ Project Status
 Completed Successfully ✔️
 
+# Day 28 - React Weather App
+
+## 📌 Project Overview
+A simple React Weather App that allows users to enter a city name and view weather information using dummy data. The app demonstrates React state management and conditional rendering.
+
+## 🚀 Features
+- Search Weather by City
+- Display Temperature
+- Display Weather Condition
+- Display Current Date
+- Reset Weather Information
+- Clean & Responsive UI
+
+## 🛠️ Technologies Used
+- React.js
+- JavaScript (ES6)
+- JSX
+- CSS3
+- Vite
+
+## 📚 Concepts Learned
+- useState Hook
+- Event Handling
+- Conditional Rendering
+- Form Handling
+- Component Styling
+- State Management
+
+## ✅ Project Status
+Completed Successfully ✔️
+
