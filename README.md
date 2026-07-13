@@ -390,3 +390,36 @@ A simple Todo App built using React that allows users to add tasks dynamically u
 ## ✅ Project Status
 Completed Successfully ✔️
 
+# Day 18 - React Todo App (CRUD Basics)
+
+## 📌 Project Overview
+A React Todo App that allows users to add, complete, and delete tasks using the useState Hook.
+
+## 🚀 Features
+- Add New Tasks
+- Delete Existing Tasks
+- Mark Tasks as Completed
+- Dynamic Task Rendering
+- Controlled Input Field
+- Live UI Updates
+- Clean & Responsive Design
+
+## 🛠️ Technologies Used
+- React.js
+- JavaScript (ES6)
+- JSX
+- CSS3
+- Vite
+
+## 📚 Concepts Learned
+- useState Hook
+- Array State Management
+- Event Handling
+- Conditional Rendering
+- Rendering Lists with map()
+- Updating Objects inside State
+- CRUD Basics in React
+
+## ✅ Project Status
+Completed Successfully ✔️
+
