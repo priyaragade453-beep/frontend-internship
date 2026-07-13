@@ -573,3 +573,32 @@ A React BMI Calculator that calculates Body Mass Index (BMI) based on height and
 ## ✅ Project Status
 Completed Successfully ✔️
 
+# Day 24 - React Digital Clock
+
+## 📌 Project Overview
+A React Digital Clock that displays the current time, current date, and a greeting based on the time of day.
+
+## 🚀 Features
+- Live Digital Clock
+- Auto Update Every Second
+- Current Date Display
+- Dynamic Greeting
+- Responsive UI
+
+## 🛠️ Technologies Used
+- React.js
+- JavaScript (ES6)
+- JSX
+- CSS3
+- Vite
+
+## 📚 Concepts Learned
+- useState Hook
+- useEffect Hook
+- setInterval()
+- Date Object
+- Component Lifecycle
+
+## ✅ Project Status
+Completed Successfully ✔️
+

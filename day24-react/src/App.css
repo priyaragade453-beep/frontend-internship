@@ -1,0 +1,40 @@
+body{
+  margin:0;
+  font-family:Arial,sans-serif;
+  background:linear-gradient(135deg,#1e3a8a,#2563eb);
+  display:flex;
+  justify-content:center;
+  align-items:center;
+  height:100vh;
+}
+
+.container{
+  width:500px;
+  background:white;
+  padding:40px;
+  border-radius:20px;
+  text-align:center;
+  box-shadow:0 10px 25px rgba(0,0,0,.3);
+}
+
+h1{
+  color:#2563eb;
+  margin-bottom:20px;
+}
+
+h2{
+  font-size:48px;
+  color:#16a34a;
+  margin:20px 0;
+}
+
+h3{
+  color:#ea580c;
+  font-size:24px;
+}
+
+p{
+  color:#555;
+  font-size:20px;
+  margin-top:15px;
+}
