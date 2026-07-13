@@ -602,3 +602,33 @@ A React Digital Clock that displays the current time, current date, and a greeti
 ## ✅ Project Status
 Completed Successfully ✔️
 
+# Day 25 - React Weather App
+
+## 📌 Project Overview
+A React Weather App that displays simulated weather information for different cities with dynamic weather icons.
+
+## 🚀 Features
+- Search Weather by City
+- Dynamic Temperature Display
+- Weather Condition with Emoji
+- Humidity Display
+- Responsive Weather Card
+- User-Friendly Interface
+
+## 🛠️ Technologies Used
+- React.js
+- JavaScript (ES6)
+- JSX
+- CSS3
+- Vite
+
+## 📚 Concepts Learned
+- useState Hook
+- Event Handling
+- Conditional Rendering
+- Object State Management
+- Dynamic UI Updates
+
+## ✅ Project Status
+Completed Successfully ✔️
+
