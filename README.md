@@ -515,3 +515,32 @@ A simple calculator built with React that performs basic arithmetic operations u
 ## ✅ Project Status
 Completed Successfully ✔️
 
+# Day 22 - React Password Generator
+
+## 📌 Project Overview
+A React Password Generator that creates secure random passwords and allows users to copy them to the clipboard.
+
+## 🚀 Features
+- Generate Random Password
+- 12-Character Secure Password
+- Copy Password to Clipboard
+- Clean & Responsive UI
+- Alert Notifications
+
+## 🛠️ Technologies Used
+- React.js
+- JavaScript (ES6)
+- JSX
+- CSS3
+- Vite
+
+## 📚 Concepts Learned
+- useState Hook
+- Random String Generation
+- Clipboard API
+- Event Handling
+- React State Management
+
+## ✅ Project Status
+Completed Successfully ✔️
+
