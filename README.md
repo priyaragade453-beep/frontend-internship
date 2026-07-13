@@ -661,3 +661,33 @@ A simple Notes App built with React that allows users to add, view, and delete n
 ## ✅ Project Status
 Completed Successfully ✔️
 
+# Day 27 - React Expense Tracker
+
+## 📌 Project Overview
+A React Expense Tracker application that allows users to add expenses, calculate the total amount automatically, and manage daily spending efficiently.
+
+## 🚀 Features
+- Add New Expenses
+- Display Expense List
+- Automatic Total Expense Calculation
+- Input Validation
+- Clean & Responsive UI
+
+## 🛠️ Technologies Used
+- React.js
+- JavaScript (ES6)
+- JSX
+- CSS3
+- Vite
+
+## 📚 Concepts Learned
+- useState Hook
+- Event Handling
+- Array State Management
+- List Rendering using map()
+- Array reduce() for Total Calculation
+- Form Handling
+
+## ✅ Project Status
+Completed Successfully ✔️
+
