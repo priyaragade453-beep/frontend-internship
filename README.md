@@ -485,3 +485,33 @@ A live digital clock built using React that updates every second and supports sw
 ## ✅ Project Status
 Completed Successfully ✔️
 
+# Day 21 - React Calculator
+
+## 📌 Project Overview
+A simple calculator built with React that performs basic arithmetic operations using React state and event handling.
+
+## 🚀 Features
+- Addition
+- Subtraction
+- Multiplication
+- Division
+- Division by Zero Handling
+- Responsive User Interface
+
+## 🛠️ Technologies Used
+- React.js
+- JavaScript (ES6)
+- JSX
+- CSS3
+- Vite
+
+## 📚 Concepts Learned
+- useState Hook
+- Event Handling
+- Controlled Inputs
+- Arithmetic Operations
+- Conditional Logic
+
+## ✅ Project Status
+Completed Successfully ✔️
+
