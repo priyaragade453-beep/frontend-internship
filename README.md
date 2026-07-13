@@ -423,3 +423,34 @@ A React Todo App that allows users to add, complete, and delete tasks using the 
 ## ✅ Project Status
 Completed Successfully ✔️
 
+# Day 19 - React Weather App
+
+## 📌 Project Overview
+A simple React Weather App that allows users to search for a city and display simulated weather information using React state.
+
+## 🚀 Features
+- Search City
+- Dynamic City Name Update
+- Different Weather Data for Different Cities
+- Responsive Weather Card
+- Clean User Interface
+- State Management using React Hooks
+
+## 🛠️ Technologies Used
+- React.js
+- JavaScript (ES6)
+- JSX
+- CSS3
+- Vite
+
+## 📚 Concepts Learned
+- useState Hook
+- Controlled Components
+- Event Handling
+- Conditional Rendering
+- Object State Management
+- Dynamic UI Updates
+
+## ✅ Project Status
+Completed Successfully ✔️
+
