@@ -330,5 +330,63 @@ Project: React Reusable Card Components
 - JavaScript
 - CSS3
 
-## Day 16 - React Counter App Completed
+# Day 16 - React Counter App
+
+## 📌 Project Overview
+A simple Counter App built using React that demonstrates state management with the `useState` Hook.
+
+## 🚀 Features
+- Increase Counter
+- Decrease Counter
+- Reset Counter
+- Live UI updates without page refresh
+- Responsive card layout
+
+## 🛠️ Technologies Used
+- React.js
+- JavaScript (ES6)
+- JSX
+- CSS3
+- Vite
+
+## 📚 Concepts Learned
+- React Components
+- useState Hook
+- Event Handling
+- State Management
+- Conditional UI Updates
+
+## ✅ Project Status
+Completed Successfully ✔️
+
+# Day 17 - React Todo App
+
+## 📌 Project Overview
+A simple Todo App built using React that allows users to add tasks dynamically using React state.
+
+## 🚀 Features
+- Add New Tasks
+- Dynamic Task List
+- Controlled Input Field
+- Automatic Input Clear after Adding Task
+- Live UI Updates
+- Clean and Responsive Design
+
+## 🛠️ Technologies Used
+- React.js
+- JavaScript (ES6)
+- JSX
+- CSS3
+- Vite
+
+## 📚 Concepts Learned
+- useState Hook
+- Array State Management
+- Controlled Components
+- Event Handling
+- Rendering Lists using map()
+- React State Updates
+
+## ✅ Project Status
+Completed Successfully ✔️
 
