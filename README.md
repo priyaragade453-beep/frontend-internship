@@ -454,3 +454,34 @@ A simple React Weather App that allows users to search for a city and display si
 ## ✅ Project Status
 Completed Successfully ✔️
 
+# Day 20 - React Digital Clock
+
+## 📌 Project Overview
+A live digital clock built using React that updates every second and supports switching between 12-hour and 24-hour time formats.
+
+## 🚀 Features
+- Live Digital Clock
+- Real-Time Updates
+- Current Date Display
+- Dynamic Greeting (Morning/Afternoon/Evening)
+- 12-Hour & 24-Hour Format Toggle
+- Responsive UI
+
+## 🛠️ Technologies Used
+- React.js
+- JavaScript (ES6)
+- JSX
+- CSS3
+- Vite
+
+## 📚 Concepts Learned
+- useState Hook
+- useEffect Hook
+- Real-Time Rendering
+- Event Handling
+- Conditional Rendering
+- Date & Time Functions
+
+## ✅ Project Status
+Completed Successfully ✔️
+
