@@ -632,3 +632,32 @@ A React Weather App that displays simulated weather information for different ci
 ## ✅ Project Status
 Completed Successfully ✔️
 
+# Day 26 - React Notes App
+
+## 📌 Project Overview
+A simple Notes App built with React that allows users to add, view, and delete notes dynamically.
+
+## 🚀 Features
+- Add New Notes
+- Delete Notes
+- Total Notes Counter
+- Responsive UI
+- Input Validation
+
+## 🛠️ Technologies Used
+- React.js
+- JavaScript (ES6)
+- JSX
+- CSS3
+- Vite
+
+## 📚 Concepts Learned
+- useState Hook
+- Arrays in React
+- List Rendering with map()
+- Event Handling
+- State Updates
+
+## ✅ Project Status
+Completed Successfully ✔️
+
